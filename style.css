@@ -1,12 +1,13 @@
 * {
     padding: 0;
-    margin: 0;
+    /* margin: 0; */
     font-family: sans-serif;
     color: white;
   }
   
   #item-1 {
-    background-color: steelblue;
+    background-color: #4682b4;
+    order: 1;
   }
   
   #item-2 {
@@ -15,5 +16,19 @@
   
   #item-3 {
     background-color: #45525b;
+    order: 2;
   }
   
+  main{
+    display: grid;
+    
+    /* margin: 10px;  */
+  }
+
+  @media screen (max-width: 800px) {
+      main{
+        grid-template-columns: 20% 1fr 20%;
+        height: 85vh;
+        gap: 10px;
+      }
+  }
